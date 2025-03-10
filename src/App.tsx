@@ -15,7 +15,6 @@ const App = () => {
   const [searchPosts, setSearchPosts] = useState<Ipost[]>([]);
   const { error, loading, posts } = useFetchPosts();
 
-  const [count, setCount] = useState(0);
 
   const searchHandler = useCallback(
     async (e: FormEvent, search: string) => {
