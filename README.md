@@ -3,7 +3,7 @@
 
 ### Introduction
 
-Welcome to the **Search Functionality Project**! This project is a React application built with **Vite** and **TypeScript**. It focuses on providing robust search functionality with efficient loading states, comprehensive error handling, responsive UI, dark mode/light mode based on the system, and optimized performance by preventing unnecessary re-renders using memo and useCallback.
+Welcome to the **Search Functionality Project**! This project is a React application built with **Vite** and **TypeScript**. It focuses on providing robust search functionality with efficient loading states, comprehensive error handling, responsive UI, dark mode/light mode based on the system, and optimized performance by preventing unnecessary re-renders using memo and useCallback.JsonPlaceHolder api does not support search query like ?search . So I make search feature in frontend using filter method of `JavaScript`
 
 Key features include:
 - **Search Functionality**: Allows users to search data efficiently.
@@ -29,14 +29,19 @@ cd searchFeatureCodeChallangeFrontend
 ```sh
 npm install
 ```
+### 3️⃣ Set up .env file 
 
-### 3️⃣ Start the Development Server
+```sh
+VITE_BASE_URL = "https://jsonplaceholder.typicode.com"
+```
+
+### 34️⃣ Start the Development Server
 
 ```sh
 npm run dev
 ```
 
-### 4️⃣ Build for Production
+### 5️⃣  Build for Production
 
 ```sh
 npm run build
